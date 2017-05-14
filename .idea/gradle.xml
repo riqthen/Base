@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$USER_HOME$/.gradle/wrapper" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AlertDialog对话框" />
+            <option value="$PROJECT_DIR$/AsyncTask" />
+            <option value="$PROJECT_DIR$/BaseTemplate定制" />
+            <option value="$PROJECT_DIR$/Bluetooth蓝牙" />
+            <option value="$PROJECT_DIR$/BroadcastReceiver2" />
+            <option value="$PROJECT_DIR$/BroadcastReceiver广播接收者" />
+            <option value="$PROJECT_DIR$/ContentProvider" />
+            <option value="$PROJECT_DIR$/Dialog对话框" />
+            <option value="$PROJECT_DIR$/ExpandableListView可展开的ListView" />
+            <option value="$PROJECT_DIR$/Fragment" />
+            <option value="$PROJECT_DIR$/FragmentPagerAdapter" />
+            <option value="$PROJECT_DIR$/GridView&amp;自定义适配器" />
+            <option value="$PROJECT_DIR$/Handler" />
+            <option value="$PROJECT_DIR$/IO流" />
+            <option value="$PROJECT_DIR$/Java" />
+            <option value="$PROJECT_DIR$/ListView" />
+            <option value="$PROJECT_DIR$/Notification通知" />
+            <option value="$PROJECT_DIR$/PopupWindow" />
+            <option value="$PROJECT_DIR$/RecyclerView" />
+            <option value="$PROJECT_DIR$/SQLite数据库" />
+            <option value="$PROJECT_DIR$/SeekBar拖动改变音量" />
+            <option value="$PROJECT_DIR$/Service" />
+            <option value="$PROJECT_DIR$/SurfaceView" />
+            <option value="$PROJECT_DIR$/TTS语音播报" />
+            <option value="$PROJECT_DIR$/Test" />
+            <option value="$PROJECT_DIR$/ViewPager" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/代码创建组件" />
+            <option value="$PROJECT_DIR$/四种启动模式launchMode" />
+            <option value="$PROJECT_DIR$/布局、组件、res" />
+            <option value="$PROJECT_DIR$/携参数跳转" />
+            <option value="$PROJECT_DIR$/数据存储" />
+            <option value="$PROJECT_DIR$/自定义View" />
+            <option value="$PROJECT_DIR$/自定义View组件ProgressBar" />
+            <option value="$PROJECT_DIR$/隐式Intent" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

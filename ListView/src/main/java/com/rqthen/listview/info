@@ -1,0 +1,120 @@
+
+# 一、创建ListView的两种方式
+1. 在布局文件中加入ListView组件，一般为match_parent
+```
+android:cacheColorHint="#00000000"
+android:divider="@android:color/darker_gray"    //项之间间隔的颜色
+android:dividerHeight="20dp"        每项间的间隔高度
+android:entries="@array/citys"      数据  使用了适配器则不要该属性
+android:fastScrollEnabled="true"    快速滚动
+android:listSelector="#321456"      点击之后，项目的颜色
+android:scrollbars="vertical"       添加滚动条
+```
+- 点击事件 
+    onItemClick    
+- 长按事件 
+    onItemLongClick
+    true    只响应长按事件
+    false   长按和点击事件都会相应(松开时响应点击事件)
+2. 不需要布局文件，将Activity继承于ListActivity，没有长按事件
+```
+单击事件：   onListItemClick
+```
+
+# 二、ListView的单选/多选模式
+用ArrayAdapter，再设置选择的模式为单选或者多选
+```
+//获取arrays文件中的数据，用getResourse()方法
+String[] cities = getResources().getStringArray(R.array.citys);   
+```
+## 1.单选模式
+```
+ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_single_choice, cities);
+listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+```
+## 2.多选模式
+```
+ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_multiple_choice, cities);
+listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);  //这句话不加则不会勾选上，只是会是可选的界面，来自于适配器中设置的simple_list_item_multiple_choice
+
+```
+# 三、使用SimpleAdapter实现自定义项布局
+**SimpleAdapter没有泛型，ArrayAdapter有泛型，通常为String**
+**使用步骤：**
+1. 在主布局中加入ListView组件
+2. 创建item布局，给其中组件赋id
+3. 在MainActivity.java中，创建需要填充到ListView中的数据数组
+4. 创建ArrayList集合，泛型为Map<String, Object>
+5. 用for循环将数据添加到Map<String, Object>中，再把map添加到list
+6. 创建SimpleAdapter。设置adapter
+
+```
+SimpleAdapter(Context context, List<? extends Map<String, ?>> dataBean, int resource, String[] from, int[] to)
+ * context：SimpleAdapter关联的View的运行环境
+ * dataBean：一个Map组成的List，在列表中的每个条目对应列表中的一行  List<Map<String, Object>> list = new ArrayList<>();
+ * resource：自定义每项的布局    R.layout.item
+ * from：HashMap中键的数组    new String[]{"img", "words"}
+ * to：item布局中的对应于HashMap键的item布局中的组件id  new int[]{R.id.iv, R.id.tv}
+```
+使用for循环添加数据到HashMap
+```
+for (int i = 0; i < img.length; i++) {
+    Map<String, Object> item = new HashMap<>();  //每个HashMap都是一行数据
+    item.put("img", img[i]);
+    item.put("words", words[i]);
+    list.add(item);
+}
+```
+```
+SimpleAdapter adapter = new SimpleAdapter(this
+    , list      //一个Map组成的List，在列表中的每个条目对应列表中的一行
+    , R.layout.list_item_4      //自定义项的布局
+    , new String[]{"img", "words"}      //HashMap中键的数组，必须与键的名字"img","words"对应
+    , new int[]{R.id.iv, R.id.tv});     //item布局中的对应于HashMap键的组件id
+```
+
+# 四、使用自定义适配器实现自定义项布局
+```static class MyAdapter extends BaseAdapter```
+
+通常配合**ListView的优化**
+1. 重复使用convertView
+2. 使用ViewHolder提高在容器中查找组件的效率
+
+**通用示例代码：**
+
+```
+//如果不优化的话，每个出现在屏幕中的项的view都是新建的，而用convertView则是缓存了之前显示过的项的view，所以id会是一样的，并不是新建
+@Override
+public View getView(int i, View convertView, ViewGroup viewGroup) {
+    ViewHolder holder;
+    if (convertView == null) {
+        LayoutInflater inflater = LayoutInflater.from(context);     //创建布局填充类的对象
+        // LayoutInflater inflater = getLayoutInflater();   //或者用这个，就不需要context
+        convertView = inflater.inflate(R.layout.list_item_5, null);    //将项布局填充到上面的对象中
+        holder = new ViewHolder();
+        holder.imageView = (ImageView) convertView.findViewById(R.id.iv);    //找到布局中的组件
+        holder.textView = (TextView) convertView.findViewById(R.id.tv);
+        convertView.setTag(holder);
+    } else {
+        holder = (ViewHolder) convertView.getTag();
+    }
+    holder.imageView.setImageResource(img[i]);
+    holder.textView.setText(words[i]);
+    Log.e("=========", convertView + "   " + i);
+    return convertView; //返回填充了项布局的视图
+}
+
+//用于保存第一次查找的组件，避免下次重复查找，以提高效率
+static class ViewHolder {
+    ImageView imageView;
+    TextView textView;
+}
+```
+该自定义适配器需要**context**，用以下方法实现：
+（如果使用getLayoutInflater()则不需要context）
+```
+Context context;
+public MyAdapter(Context context) {
+    this.context = context;
+}
+```

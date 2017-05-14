@@ -1,0 +1,16 @@
+<Cars>
+    <Car id="1">
+        <pingpai>兰博基尼</pingpai>
+        <color>红色</color>
+    </Car>
+
+    <Car id="2">
+        <pingpai>奥迪</pingpai>
+        <color>黑色</color>
+    </Car>
+
+    <Car id="3">
+        <pingpai>法拉利</pingpai>
+        <color>黄色</color>
+    </Car>
+</Cars>

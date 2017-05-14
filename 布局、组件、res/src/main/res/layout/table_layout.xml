@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- 唯一一个不需要宽高的组件，该容器下的组件都可以没有宽高 -->
+
+    <!-- 每个组件单独占一行 -->
+
+    <Button android:text="你好" />
+
+    <Button android:text="你好" />
+
+    <TableRow>
+
+        <Button android:text="19999999999999999" />
+
+        <Button android:text="2" />
+
+        <Button android:text="3" />
+
+        <Button android:text="4" />
+
+        <Button android:text="5" />
+    </TableRow>
+
+    <TableRow>
+
+        <!-- 使用weight来分配宽度 ,此处不给weight，组件会出屏幕-->
+
+        <Button
+            android:layout_weight="1"
+            android:text="19999999999999999" />
+
+        <Button
+            android:layout_weight="1"
+            android:text="2" />
+
+        <Button
+            android:layout_weight="1"
+            android:text="3" />
+
+        <Button
+            android:layout_weight="1"
+            android:text="4" />
+
+        <Button
+            android:layout_weight="1"
+            android:text="5" />
+    </TableRow>
+
+
+    <TableRow>
+
+        <Button
+            android:layout_weight="1"
+            android:text="1" />
+
+        <Button
+            android:layout_weight="1"
+            android:text="6" />
+
+        <!--layout_span和layout_weight同时设置成一样的数值，会保证比例，同时不会出屏幕兵与上面的对齐-->
+        <Button
+            android:layout_span="3"
+            android:layout_weight="3"
+            android:text="7" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:layout_column="1"
+            android:text="1" />
+
+        <Button android:text="6" />
+    </TableRow>
+
+</TableLayout>

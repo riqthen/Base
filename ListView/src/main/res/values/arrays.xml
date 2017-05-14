@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!--spinner中也会使用-->
+<resources>
+    <array name="citys">
+        <item>武汉</item>
+        <item>苏州</item>
+        <item>广州</item>
+        <item>郑州</item>
+        <item>常州</item>
+        <item>黄州</item>
+        <item>杭州</item>
+        <item>梅州</item>
+        <item>鄂州</item>
+        <item>锦州</item>
+        <item>台州</item>
+        <item>泰州</item>
+        <item>温州</item>
+        <item>禹州</item>
+        <item>徐州</item>
+        <item>未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成未完成</item>
+    </array>
+</resources>

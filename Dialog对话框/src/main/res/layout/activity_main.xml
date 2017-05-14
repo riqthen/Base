@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.riq.dialog.MainActivity">
+
+    <Button
+        android:id="@+id/dialog_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义Dialog" />
+
+    <Button
+        android:id="@+id/dialog_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="警告对话框" />
+
+    <Button
+        android:id="@+id/dialog_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="菜单对话框" />
+
+    <Button
+        android:id="@+id/dialog_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单选对话框" />
+
+    <Button
+        android:id="@+id/dialog_multi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多选对话框" />
+
+    <Button
+        android:id="@+id/dialog_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="适配器对话框" />
+
+    <Button
+        android:id="@+id/dialog_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义对话框" />
+
+    <Button
+        android:id="@+id/dialog_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭对话框" />
+
+    <!--进度对话框-->
+    <Button
+        android:id="@+id/dialog_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进度对话框" />
+
+
+    <Button
+        android:id="@+id/dialog_date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日期选择器" />
+
+    <Button
+        android:id="@+id/dialog_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间选择器" />
+</LinearLayout>

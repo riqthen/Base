@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.riq.service">
+    <!--允许打开网络-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  //获取网络状态
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />  //改变网络状态
+
+    <!--WiFi-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />     //获取WiFi状态
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />     //改变WiFi状态
+
+    <!--获取电池状态-->
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
+    <!--蓝牙-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />             //允许连接匹配的蓝牙设备
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />       //允许发现匹配的蓝牙权限
+
+    <!--短信-->
+    <uses-permission android:name="android.permission.BROADCAST_SMS" />         //允许广播收到短信提醒
+    <uses-permission android:name="android.permission.READ_SMS" />              //读取短信
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />           //接收、监控、处理短信
+    <uses-permission android:name="android.permission.SEND_SMS" />              //发送短信
+
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />           //接收、监控、处理彩信
+
+    <!--电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />            //允许程序打电话
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />      //读取电话状态
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />//允许监听、控制、取消呼出电话
+
+    <!--联系人-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />         //读取用户的联系人数据
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>         //允许写入联系人
+
+
+    <!--使用照相机-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--允许删除缓存文件-->
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    <!--允许删除安装包-->
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+
+    <!--修改全局声音设置-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!--重启设备-->
+    <uses-permission android:name="android.permission.REBOOT" />
+    <!--允许录音-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--时间时区-->
+    <uses-permission android:name="android.permission.SET_TIME" />          //设置时间
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />     //设置时区
+
+    <!--设置桌面壁纸-->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <!--振动器-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest>

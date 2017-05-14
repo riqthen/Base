@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?><!--ScrollView直接做根节点-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context="com.riq.views.Widget">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--android:ellipsize="end" 省略后面部分-->
+        <!--android:maxEms="2"  显示4个字符 即1234-->
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="4"
+            android:text="1234567890"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!--android:imeOptions="actionNext" 回车键的功能-->
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="abcdef"
+            android:ems="4"
+            android:imeOptions="actionNext"
+            android:inputType="numberPassword"
+            android:lines="1"
+            android:maxLength="10"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_background"
+            android:text="按钮" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher" />
+
+        <CheckedTextView
+            android:id="@+id/ctv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckedTextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--btnMusic.setChecked(true) 勾选-->
+            <CheckBox
+                android:id="@+id/cb_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音乐" />
+
+            <CheckBox
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运动" />
+
+            <CheckBox
+                android:id="@+id/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="敲代码" />
+        </LinearLayout>
+
+        <!--dp.init()-->
+        <DatePicker
+            android:id="@+id/dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--timePicker.setIs24HourView(true);-->
+        <!--timePicker.setCurrentHour(18);-->
+        <!--timePicker.setCurrentMinute(00);-->
+        <TimePicker
+            android:id="@+id/tp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rb1" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rb2" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rb3" />
+        </RadioGroup>
+
+        <!--只联想一次，只输入一个名字-->
+        <!--android:dropDownHeight="50dp"   补全栏的总高度-->
+        <!--android:completionThreshold="1"   输入1个字符给提示-->
+        <AutoCompleteTextView
+            android:id="@+id/actv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:dropDownHeight="50dp"
+            android:hint="aaa,aab,abb,bbb, ccc" />
+
+        <!--可以联想多次，可以输入多个名字-->
+        <MultiAutoCompleteTextView
+            android:id="@+id/mactv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:hint="aaa,aab,abb,bbb, ccc" />
+
+        <ImageSwitcher
+            android:id="@+id/is"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#999" />
+
+        <!--style="?android:attr/progressBarStyleLarge" 旋转样式-->
+        <!--style="?android:attr/progressBarStyleHorizontal" 水平样式-->
+        <ProgressBar
+            android:id="@+id/pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="200"
+            android:progress="20" />
+
+        <SeekBar
+            android:id="@+id/sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--星级评分条-->
+        <RatingBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--可以设置适配器，也可以直接用entries属性设置下拉选项-->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+</ScrollView>

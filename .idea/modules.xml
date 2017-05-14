@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlertDialog对话框/AlertDialog对话框.iml" filepath="$PROJECT_DIR$/AlertDialog对话框/AlertDialog对话框.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AsyncTask/AsyncTask.iml" filepath="$PROJECT_DIR$/AsyncTask/AsyncTask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Base.iml" filepath="$PROJECT_DIR$/Base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BaseTemplate定制/BaseTemplate定制.iml" filepath="$PROJECT_DIR$/BaseTemplate定制/BaseTemplate定制.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bluetooth蓝牙/Bluetooth蓝牙.iml" filepath="$PROJECT_DIR$/Bluetooth蓝牙/Bluetooth蓝牙.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BroadcastReceiver2/BroadcastReceiver2.iml" filepath="$PROJECT_DIR$/BroadcastReceiver2/BroadcastReceiver2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BroadcastReceiver广播接收者/BroadcastReceiver广播接收者.iml" filepath="$PROJECT_DIR$/BroadcastReceiver广播接收者/BroadcastReceiver广播接收者.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContentProvider/ContentProvider.iml" filepath="$PROJECT_DIR$/ContentProvider/ContentProvider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dialog对话框/Dialog对话框.iml" filepath="$PROJECT_DIR$/Dialog对话框/Dialog对话框.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExpandableListView可展开的ListView/ExpandableListView可展开的ListView.iml" filepath="$PROJECT_DIR$/ExpandableListView可展开的ListView/ExpandableListView可展开的ListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fragment/Fragment.iml" filepath="$PROJECT_DIR$/Fragment/Fragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FragmentPagerAdapter/FragmentPagerAdapter.iml" filepath="$PROJECT_DIR$/FragmentPagerAdapter/FragmentPagerAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GridView&amp;自定义适配器/GridView&amp;自定义适配器.iml" filepath="$PROJECT_DIR$/GridView&amp;自定义适配器/GridView&amp;自定义适配器.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Handler/Handler.iml" filepath="$PROJECT_DIR$/Handler/Handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IO流/IO流.iml" filepath="$PROJECT_DIR$/IO流/IO流.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/Java.iml" filepath="$PROJECT_DIR$/Java/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListView/ListView.iml" filepath="$PROJECT_DIR$/ListView/ListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Notification通知/Notification通知.iml" filepath="$PROJECT_DIR$/Notification通知/Notification通知.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PopupWindow/PopupWindow.iml" filepath="$PROJECT_DIR$/PopupWindow/PopupWindow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView/RecyclerView.iml" filepath="$PROJECT_DIR$/RecyclerView/RecyclerView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SQLite数据库/SQLite数据库.iml" filepath="$PROJECT_DIR$/SQLite数据库/SQLite数据库.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SeekBar拖动改变音量/SeekBar拖动改变音量.iml" filepath="$PROJECT_DIR$/SeekBar拖动改变音量/SeekBar拖动改变音量.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Service/Service.iml" filepath="$PROJECT_DIR$/Service/Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SurfaceView/SurfaceView.iml" filepath="$PROJECT_DIR$/SurfaceView/SurfaceView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TTS语音播报/TTS语音播报.iml" filepath="$PROJECT_DIR$/TTS语音播报/TTS语音播报.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ViewPager/ViewPager.iml" filepath="$PROJECT_DIR$/ViewPager/ViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/代码创建组件/代码创建组件.iml" filepath="$PROJECT_DIR$/代码创建组件/代码创建组件.iml" />
+      <module fileurl="file://$PROJECT_DIR$/四种启动模式launchMode/四种启动模式launchMode.iml" filepath="$PROJECT_DIR$/四种启动模式launchMode/四种启动模式launchMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/布局、组件、res/布局、组件、res.iml" filepath="$PROJECT_DIR$/布局、组件、res/布局、组件、res.iml" />
+      <module fileurl="file://$PROJECT_DIR$/携参数跳转/携参数跳转.iml" filepath="$PROJECT_DIR$/携参数跳转/携参数跳转.iml" />
+      <module fileurl="file://$PROJECT_DIR$/数据存储/数据存储.iml" filepath="$PROJECT_DIR$/数据存储/数据存储.iml" />
+      <module fileurl="file://$PROJECT_DIR$/自定义View/自定义View.iml" filepath="$PROJECT_DIR$/自定义View/自定义View.iml" />
+      <module fileurl="file://$PROJECT_DIR$/自定义View组件ProgressBar/自定义View组件ProgressBar.iml" filepath="$PROJECT_DIR$/自定义View组件ProgressBar/自定义View组件ProgressBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/隐式Intent/隐式Intent.iml" filepath="$PROJECT_DIR$/隐式Intent/隐式Intent.iml" />
+    </modules>
+  </component>
+</project>
